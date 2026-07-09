@@ -80,7 +80,7 @@ def main():
     ]
     resultados_contagem = colecao.aggregate(pipeline_contagem)
  
-    print("-- total de Participantes por Evento ---")
+    print("--- Total de Participantes por Evento ---")
     for doc in resultados_contagem:
         print(f"Evento: {doc['_id']} | Total: {doc['total_participantes']}")
  
